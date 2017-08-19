@@ -2,7 +2,6 @@
 using PosAsp.Library;
 using PosAsp.Models;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Linq;
 using System.Net;
@@ -11,15 +10,32 @@ using System.Web.Http;
 
 namespace PosAsp.Controllers
 {
+    [RoutePrefix("api/users")]
     public class UsersController : ApiController
     {
-        [HttpGet]
-        public IHttpActionResult All()
+        [HttpPost, Route("login")]
+        public IHttpActionResult Login([FromBody] User user)
         {
-            return Ok();
+            //TODO: Need backend validation and refactor
+
+            string email = user.UserEmail.Trim();
+            string password = user.UserPassword.Trim();
+
+            using (var context = new Context())
+            {
+                User userData = context.Users.FirstOrDefault((u) => u.UserEmail == email);
+                if (userData != null && Crypter.CheckPassword(password, userData.UserPassword))
+                {
+                    return Ok(userData.UserToken);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
         }
 
-        [HttpPost]
+        [HttpPost, Route("new")]
         public HttpResponseMessage New([FromBody] User user)
         {
             if (ModelState.IsValid)
