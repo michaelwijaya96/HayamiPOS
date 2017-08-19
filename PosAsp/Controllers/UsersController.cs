@@ -30,6 +30,7 @@ namespace PosAsp.Controllers
                     {
                         UserName = user.UserName.Trim(),
                         UserPassword = Crypter.Blowfish.Crypt(user.UserPassword.Trim()),
+                        UserEmail = user.UserEmail.Trim(),
                         CreatedAt = DateTime.Today,
                         UpdDate = DateTime.Today,
                         UserToken = RandomAccessToken.RandomString(30)
@@ -43,7 +44,7 @@ namespace PosAsp.Controllers
                         Console.WriteLine(e.Message);
                         throw;
                     }
-                    return Request.CreateResponse(HttpStatusCode.Created, RandomAccessToken.RandomString(30));
+                    return Request.CreateResponse(HttpStatusCode.Created);
                 }
             }
             else

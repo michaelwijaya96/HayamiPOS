@@ -127,9 +127,9 @@
     <Compile Include="Migrations\201708191254494_UpdateUsersModelValidation.Designer.cs">
       <DependentUpon>201708191254494_UpdateUsersModelValidation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.cs" />
-    <Compile Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.Designer.cs">
-      <DependentUpon>201708191258242_RemoveRequiredOnCreatedAtToUsers.cs</DependentUpon>
+    <Compile Include="Migrations\201708191401416_UpdateCreatedAtToUsers.cs" />
+    <Compile Include="Migrations\201708191401416_UpdateCreatedAtToUsers.Designer.cs">
+      <DependentUpon>201708191401416_UpdateCreatedAtToUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
@@ -166,8 +166,8 @@
     <EmbeddedResource Include="Migrations\201708191254494_UpdateUsersModelValidation.resx">
       <DependentUpon>201708191254494_UpdateUsersModelValidation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.resx">
-      <DependentUpon>201708191258242_RemoveRequiredOnCreatedAtToUsers.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708191401416_UpdateCreatedAtToUsers.resx">
+      <DependentUpon>201708191401416_UpdateCreatedAtToUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,13 +7,13 @@ namespace PosAsp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class RemoveRequiredOnCreatedAtToUsers : IMigrationMetadata
+    public sealed partial class UpdateCreatedAtToUsers : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RemoveRequiredOnCreatedAtToUsers));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateCreatedAtToUsers));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708191258242_RemoveRequiredOnCreatedAtToUsers"; }
+            get { return "201708191401416_UpdateCreatedAtToUsers"; }
         }
         
         string IMigrationMetadata.Source
