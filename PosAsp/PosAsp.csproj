@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CryptSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CryptSharpOfficial.2.1.0.0\lib\CryptSharp.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -99,6 +102,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Library\RandomAccessToken.cs" />
     <Compile Include="Migrations\201708191106387_InitialCreate.cs" />
     <Compile Include="Migrations\201708191106387_InitialCreate.Designer.cs">
       <DependentUpon>201708191106387_InitialCreate.cs</DependentUpon>
@@ -106,6 +110,26 @@
     <Compile Include="Migrations\201708191126500_AddSomeTablesToUsers.cs" />
     <Compile Include="Migrations\201708191126500_AddSomeTablesToUsers.Designer.cs">
       <DependentUpon>201708191126500_AddSomeTablesToUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191224040_DisableSomeMigrationToUsers.cs" />
+    <Compile Include="Migrations\201708191224040_DisableSomeMigrationToUsers.Designer.cs">
+      <DependentUpon>201708191224040_DisableSomeMigrationToUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191228488_AddEmailToUsers.cs" />
+    <Compile Include="Migrations\201708191228488_AddEmailToUsers.Designer.cs">
+      <DependentUpon>201708191228488_AddEmailToUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191234154_UpdateEmailFieldOnUsers.cs" />
+    <Compile Include="Migrations\201708191234154_UpdateEmailFieldOnUsers.Designer.cs">
+      <DependentUpon>201708191234154_UpdateEmailFieldOnUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191254494_UpdateUsersModelValidation.cs" />
+    <Compile Include="Migrations\201708191254494_UpdateUsersModelValidation.Designer.cs">
+      <DependentUpon>201708191254494_UpdateUsersModelValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.cs" />
+    <Compile Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.Designer.cs">
+      <DependentUpon>201708191258242_RemoveRequiredOnCreatedAtToUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
@@ -129,6 +153,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708191126500_AddSomeTablesToUsers.resx">
       <DependentUpon>201708191126500_AddSomeTablesToUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191224040_DisableSomeMigrationToUsers.resx">
+      <DependentUpon>201708191224040_DisableSomeMigrationToUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191228488_AddEmailToUsers.resx">
+      <DependentUpon>201708191228488_AddEmailToUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191234154_UpdateEmailFieldOnUsers.resx">
+      <DependentUpon>201708191234154_UpdateEmailFieldOnUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191254494_UpdateUsersModelValidation.resx">
+      <DependentUpon>201708191254494_UpdateUsersModelValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191258242_RemoveRequiredOnCreatedAtToUsers.resx">
+      <DependentUpon>201708191258242_RemoveRequiredOnCreatedAtToUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
