@@ -107,7 +107,22 @@
     <Compile Include="Migrations\201708191126500_AddSomeTablesToUsers.Designer.cs">
       <DependentUpon>201708191126500_AddSomeTablesToUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708191205385_AddCustomerCounterToModels.cs" />
+    <Compile Include="Migrations\201708191205385_AddCustomerCounterToModels.Designer.cs">
+      <DependentUpon>201708191205385_AddCustomerCounterToModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Counter.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Discount.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\ProductDt.cs" />
+    <Compile Include="Models\ProductHd.cs" />
+    <Compile Include="Models\ProductImg.cs" />
+    <Compile Include="Models\Storage.cs" />
+    <Compile Include="Models\TransactionDt.cs" />
+    <Compile Include="Models\TransactionHd.cs" />
+    <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708191126500_AddSomeTablesToUsers.resx">
       <DependentUpon>201708191126500_AddSomeTablesToUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708191205385_AddCustomerCounterToModels.resx">
+      <DependentUpon>201708191205385_AddCustomerCounterToModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
