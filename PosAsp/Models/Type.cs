@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PosAsp.Models
@@ -15,5 +16,8 @@ namespace PosAsp.Models
         public DateTime UpdDate { get; set; }
         [Required, MaxLength(50)]
         public string UpdatedBy { get; set; }
+
+        // Relationship definition
+        public virtual ICollection<ProductHd> ProductHds { get; set; }
     }
 }

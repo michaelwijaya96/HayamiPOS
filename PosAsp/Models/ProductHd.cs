@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PosAsp.Models
 {
@@ -16,11 +17,17 @@ namespace PosAsp.Models
         public DateTime CreatedAt { get; set; }
         [Required]
         public DateTime UpdDate { get; set; }
-        [Required]
+        [Required, MaxLength(50)]
         public string UpdatedBy { get; set; }
 
-        //Foreign key definition
+        // Foreign key definition
+        public int ModelID { get; set; }
+        public int TypeID { get; set; }
+
+        // Relationship definition
+        [ForeignKey("TypeID")]
         public virtual Type Type { get; set; }
+        [ForeignKey("ModelID")]
         public virtual Model Model { get; set; }
     }
 }

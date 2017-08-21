@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PosAsp.Models
@@ -12,7 +13,10 @@ namespace PosAsp.Models
         public DateTime CreatedAt { get; set; }
         [Required]
         public DateTime UpdDate { get; set; }
-        [Required]
+        [Required, MaxLength(50)]
         public string UpdatedBy { get; set; }
+
+        // Relationship definition
+        public ICollection<ProductHd> ProductHds { get; set; }
     }
 }
