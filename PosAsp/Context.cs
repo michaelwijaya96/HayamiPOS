@@ -33,5 +33,7 @@ namespace PosAsp
         public virtual DbSet<Model> Models { get; set; }
         public virtual DbSet<ProductHd> ProductHds { get; set; }
         public virtual DbSet<ProductImg> ProductImgs { get; set; }
+        public virtual DbSet<Storage> Storages { get; set; }
+        public virtual DbSet<ProductDt> ProductDts { get; set; }
     }
 }
