@@ -18,9 +18,18 @@ namespace PosAsp
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Models.Type>().Property(t => t.TypePrice).HasPrecision(23, 6);
+        }
+
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Models.Type> Types { get; set; }
+        public virtual DbSet<Model> Models { get; set; }
     }
 }
