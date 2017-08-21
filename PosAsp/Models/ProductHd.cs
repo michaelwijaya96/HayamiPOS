@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -29,5 +30,6 @@ namespace PosAsp.Models
         public virtual Type Type { get; set; }
         [ForeignKey("ModelID")]
         public virtual Model Model { get; set; }
+        public ICollection<ProductImg> ProductImgs { get; set; }
     }
 }

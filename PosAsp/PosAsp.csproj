@@ -135,9 +135,14 @@
     <Compile Include="Migrations\201708211616052_AddProductHdsTypeModel.Designer.cs">
       <DependentUpon>201708211616052_AddProductHdsTypeModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708211706146_AddProductImgsTable.cs" />
+    <Compile Include="Migrations\201708211706146_AddProductImgsTable.Designer.cs">
+      <DependentUpon>201708211706146_AddProductImgsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\ProductHd.cs" />
+    <Compile Include="Models\ProductImg.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -178,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708211616052_AddProductHdsTypeModel.resx">
       <DependentUpon>201708211616052_AddProductHdsTypeModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211706146_AddProductImgsTable.resx">
+      <DependentUpon>201708211706146_AddProductImgsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
