@@ -139,11 +139,16 @@
     <Compile Include="Migrations\201708211706146_AddProductImgsTable.Designer.cs">
       <DependentUpon>201708211706146_AddProductImgsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708211745248_AddProductHdStorage.cs" />
+    <Compile Include="Migrations\201708211745248_AddProductHdStorage.Designer.cs">
+      <DependentUpon>201708211745248_AddProductHdStorage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\ProductDt.cs" />
     <Compile Include="Models\ProductHd.cs" />
     <Compile Include="Models\ProductImg.cs" />
+    <Compile Include="Models\StockAdjust.cs" />
     <Compile Include="Models\Storage.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
@@ -188,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708211706146_AddProductImgsTable.resx">
       <DependentUpon>201708211706146_AddProductImgsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211745248_AddProductHdStorage.resx">
+      <DependentUpon>201708211745248_AddProductHdStorage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,5 +28,6 @@ namespace PosAsp.Models
         public ProductHd ProductHd { get; set; }
         [ForeignKey("StorageID")]
         public Storage Storage { get; set; }
+        public ICollection<StockAdjust> StockAdjusts { get; set; }
     }
 }
