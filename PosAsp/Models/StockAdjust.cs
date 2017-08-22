@@ -17,7 +17,7 @@ namespace PosAsp.Models
         public string UpdatedBy { get; set; }
 
         // Foreign Key
-        public int ProductDtID { get; set; }
+        public int? ProductDtID { get; set; }
 
         // Relationship definition
         [ForeignKey("ProductDtID")]

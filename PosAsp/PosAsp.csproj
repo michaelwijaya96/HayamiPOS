@@ -98,6 +98,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Context.cs" />
+    <Compile Include="Controllers\TypesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +143,10 @@
     <Compile Include="Migrations\201708211745248_AddProductHdStorage.cs" />
     <Compile Include="Migrations\201708211745248_AddProductHdStorage.Designer.cs">
       <DependentUpon>201708211745248_AddProductHdStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708221832098_AddStockAdjusts.cs" />
+    <Compile Include="Migrations\201708221832098_AddStockAdjusts.Designer.cs">
+      <DependentUpon>201708221832098_AddStockAdjusts.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Model.cs" />
@@ -196,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708211745248_AddProductHdStorage.resx">
       <DependentUpon>201708211745248_AddProductHdStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708221832098_AddStockAdjusts.resx">
+      <DependentUpon>201708221832098_AddStockAdjusts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
